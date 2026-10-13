@@ -47,7 +47,7 @@ env:
   # arch-specific SASS), and arch-specific PTX cannot JIT on any other GPU, so
   # the forward-compatible PTX is compute_100: sm_103/110/121 and future GPUs
   # JIT from it. CUDA 13 dropped sm_50-72, so both lines share one list.
-  CUDA12_ARCHS: '75-real;80-real;86-real;89-real;90-real;100-real;120-real;100-virtual'
+  CUDA12_ARCHS: '61-real;75-real;80-real;86-real;89-real;90-real;100-real;120-real;100-virtual'
   CUDA13_ARCHS: '75-real;80-real;86-real;89-real;90-real;100-real;120-real;100-virtual'
   # Linux containers + Windows Jimver installs. 13.0 matches torch's cu130
   # wheels, whose libcudart.so.13 / cudart64_13.dll Studio reuses.
